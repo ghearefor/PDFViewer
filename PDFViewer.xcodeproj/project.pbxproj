@@ -1,0 +1,1367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32CF8E46284A3335BD7685D2 /* Pods_PDFViewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4EC8DFE4C4FC1567DBC79D /* Pods_PDFViewerTests.framework */; };
+		98B91B5A17EF4AD7C4CFB0A9 /* Pods_PDFViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5FEDAC15A17B49316A9B627 /* Pods_PDFViewer.framework */; };
+		B1ADE2C116987EAE4D013228 /* Pods_PDFViewer_PDFViewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E6C7B95792AA3A7490EC78 /* Pods_PDFViewer_PDFViewerUITests.framework */; };
+		FA2BE3772CDB66EE00D7AB51 /* CBZModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3002CDB66EB00D7AB51 /* CBZModule.swift */; };
+		FA2BE3782CDB66EE00D7AB51 /* CBZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3012CDB66EB00D7AB51 /* CBZViewController.swift */; };
+		FA2BE3792CDB66EE00D7AB51 /* AudiobookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3032CDB66EB00D7AB51 /* AudiobookViewController.swift */; };
+		FA2BE37A2CDB66EE00D7AB51 /* AudiobookModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3042CDB66EB00D7AB51 /* AudiobookModule.swift */; };
+		FA2BE37B2CDB66EE00D7AB51 /* PDFModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3062CDB66EB00D7AB51 /* PDFModule.swift */; };
+		FA2BE37C2CDB66EE00D7AB51 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3072CDB66EB00D7AB51 /* PDFViewController.swift */; };
+		FA2BE37D2CDB66EE00D7AB51 /* LCPManagementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE30A2CDB66EB00D7AB51 /* LCPManagementTableViewController.swift */; };
+		FA2BE37E2CDB66EE00D7AB51 /* LCPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE30B2CDB66EB00D7AB51 /* LCPViewModel.swift */; };
+		FA2BE37F2CDB66EE00D7AB51 /* DRM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE30C2CDB66EB00D7AB51 /* DRM.storyboard */; };
+		FA2BE3802CDB66EE00D7AB51 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE30F2CDB66EB00D7AB51 /* UserPreferences.swift */; };
+		FA2BE3812CDB66EE00D7AB51 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3102CDB66EB00D7AB51 /* ReaderViewController.swift */; };
+		FA2BE3822CDB66EE00D7AB51 /* BookmarkCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3122CDB66EB00D7AB51 /* BookmarkCellView.swift */; };
+		FA2BE3832CDB66EE00D7AB51 /* HighlightCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3142CDB66EB00D7AB51 /* HighlightCellView.swift */; };
+		FA2BE3842CDB66EE00D7AB51 /* HighlightContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3152CDB66EB00D7AB51 /* HighlightContextMenu.swift */; };
+		FA2BE3852CDB66EE00D7AB51 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3172CDB66EB00D7AB51 /* SearchView.swift */; };
+		FA2BE3862CDB66EE00D7AB51 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3182CDB66EB00D7AB51 /* SearchViewModel.swift */; };
+		FA2BE3872CDB66EE00D7AB51 /* OutlineViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE31A2CDB66EB00D7AB51 /* OutlineViewModels.swift */; };
+		FA2BE3882CDB66EE00D7AB51 /* OutlineTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE31B2CDB66EB00D7AB51 /* OutlineTableView.swift */; };
+		FA2BE3892CDB66EE00D7AB51 /* TTSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE31D2CDB66EB00D7AB51 /* TTSView.swift */; };
+		FA2BE38A2CDB66EE00D7AB51 /* TTSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE31E2CDB66EB00D7AB51 /* TTSViewModel.swift */; };
+		FA2BE38B2CDB66EE00D7AB51 /* VisualReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE31F2CDB66EB00D7AB51 /* VisualReaderViewController.swift */; };
+		FA2BE38C2CDB66EE00D7AB51 /* ReaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3202CDB66EB00D7AB51 /* ReaderFactory.swift */; };
+		FA2BE38D2CDB66EE00D7AB51 /* ReaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3212CDB66EB00D7AB51 /* ReaderError.swift */; };
+		FA2BE38E2CDB66EE00D7AB51 /* ReaderModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3222CDB66EB00D7AB51 /* ReaderModule.swift */; };
+		FA2BE38F2CDB66EE00D7AB51 /* ReaderFormatModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3232CDB66EB00D7AB51 /* ReaderFormatModule.swift */; };
+		FA2BE3902CDB66EE00D7AB51 /* EPUBModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3252CDB66EB00D7AB51 /* EPUBModule.swift */; };
+		FA2BE3912CDB66EE00D7AB51 /* EPUBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3262CDB66EB00D7AB51 /* EPUBViewController.swift */; };
+		FA2BE3922CDB66EE00D7AB51 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3272CDB66EB00D7AB51 /* Toast.swift */; };
+		FA2BE3932CDB66EE00D7AB51 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3292CDB66EB00D7AB51 /* AboutView.swift */; };
+		FA2BE3942CDB66EE00D7AB51 /* AboutSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE32A2CDB66EB00D7AB51 /* AboutSectionView.swift */; };
+		FA2BE3952CDB66EE00D7AB51 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE32B2CDB66EB00D7AB51 /* About.storyboard */; };
+		FA2BE3962CDB66EE00D7AB51 /* PublicationMenuViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE32D2CDB66EC00D7AB51 /* PublicationMenuViewController.strings */; };
+		FA2BE3972CDB66EE00D7AB51 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE32F2CDB66EC00D7AB51 /* LibraryViewController.swift */; };
+		FA2BE3982CDB66EE00D7AB51 /* PublicationMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3302CDB66EC00D7AB51 /* PublicationMenuViewController.swift */; };
+		FA2BE3992CDB66EE00D7AB51 /* LibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3312CDB66EC00D7AB51 /* LibraryService.swift */; };
+		FA2BE39A2CDB66EE00D7AB51 /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE3322CDB66EC00D7AB51 /* Library.storyboard */; };
+		FA2BE39B2CDB66EE00D7AB51 /* PublicationMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE3342CDB66EC00D7AB51 /* PublicationMenuViewController.xib */; };
+		FA2BE39C2CDB66EE00D7AB51 /* PublicationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE3362CDB66EC00D7AB51 /* PublicationCollectionViewCell.xib */; };
+		FA2BE39D2CDB66EE00D7AB51 /* LibraryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3382CDB66EC00D7AB51 /* LibraryError.swift */; };
+		FA2BE39E2CDB66EE00D7AB51 /* LibraryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3392CDB66EC00D7AB51 /* LibraryFactory.swift */; };
+		FA2BE39F2CDB66EE00D7AB51 /* PublicationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE33A2CDB66EC00D7AB51 /* PublicationCollectionViewCell.swift */; };
+		FA2BE3A02CDB66EE00D7AB51 /* LibraryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE33B2CDB66EC00D7AB51 /* LibraryModule.swift */; };
+		FA2BE3A12CDB66EE00D7AB51 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE33C2CDB66EC00D7AB51 /* DetailsTableViewController.swift */; };
+		FA2BE3A22CDB66EE00D7AB51 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE33E2CDB66EC00D7AB51 /* Highlight.swift */; };
+		FA2BE3A32CDB66EE00D7AB51 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE33F2CDB66EC00D7AB51 /* Bookmark.swift */; };
+		FA2BE3A42CDB66EE00D7AB51 /* UserPreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3402CDB66EC00D7AB51 /* UserPreferencesStore.swift */; };
+		FA2BE3A52CDB66EE00D7AB51 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3412CDB66EC00D7AB51 /* Book.swift */; };
+		FA2BE3A62CDB66EE00D7AB51 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3422CDB66EC00D7AB51 /* Database.swift */; };
+		FA2BE3A72CDB66EE00D7AB51 /* OPDSNavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3442CDB66EC00D7AB51 /* OPDSNavigationTableViewCell.swift */; };
+		FA2BE3A82CDB66EE00D7AB51 /* OPDSGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3452CDB66EC00D7AB51 /* OPDSGroupCollectionViewCell.swift */; };
+		FA2BE3A92CDB66EE00D7AB51 /* OPDSRootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3462CDB66EC00D7AB51 /* OPDSRootTableViewController.swift */; };
+		FA2BE3AA2CDB66EE00D7AB51 /* OPDSModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3472CDB66EC00D7AB51 /* OPDSModule.swift */; };
+		FA2BE3AB2CDB66EE00D7AB51 /* OPDSGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3482CDB66EC00D7AB51 /* OPDSGroupTableViewCell.swift */; };
+		FA2BE3AC2CDB66EE00D7AB51 /* OPDSCatalogRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE34A2CDB66EC00D7AB51 /* OPDSCatalogRow.swift */; };
+		FA2BE3AD2CDB66EE00D7AB51 /* OPDSCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE34B2CDB66EC00D7AB51 /* OPDSCatalog.swift */; };
+		FA2BE3AE2CDB66EE00D7AB51 /* OPDSCatalogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE34C2CDB66EC00D7AB51 /* OPDSCatalogsView.swift */; };
+		FA2BE3AF2CDB66EE00D7AB51 /* EditOPDSCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE34D2CDB66EC00D7AB51 /* EditOPDSCatalogView.swift */; };
+		FA2BE3B02CDB66EE00D7AB51 /* OPDSCatalogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE34E2CDB66EC00D7AB51 /* OPDSCatalogsViewModel.swift */; };
+		FA2BE3B12CDB66EE00D7AB51 /* OPDSPublicationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE34F2CDB66EC00D7AB51 /* OPDSPublicationInfoViewController.swift */; };
+		FA2BE3B22CDB66EE00D7AB51 /* OPDSFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3502CDB66EC00D7AB51 /* OPDSFactory.swift */; };
+		FA2BE3B32CDB66EE00D7AB51 /* OPDSPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3512CDB66EC00D7AB51 /* OPDSPlaceholderView.swift */; };
+		FA2BE3B42CDB66EE00D7AB51 /* OPDS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE3522CDB66EC00D7AB51 /* OPDS.storyboard */; };
+		FA2BE3B52CDB66EE00D7AB51 /* OPDSPublicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3542CDB66EC00D7AB51 /* OPDSPublicationTableViewCell.swift */; };
+		FA2BE3B62CDB66EE00D7AB51 /* OPDSFacetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3552CDB66EC00D7AB51 /* OPDSFacetViewController.swift */; };
+		FA2BE3B72CDB66EE00D7AB51 /* LCPModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3572CDB66EC00D7AB51 /* LCPModule.swift */; };
+		FA2BE3B82CDB66EE00D7AB51 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE3592CDB66ED00D7AB51 /* Localizable.strings */; };
+		FA2BE3B92CDB66EE00D7AB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE35B2CDB66ED00D7AB51 /* Assets.xcassets */; };
+		FA2BE3BA2CDB66EE00D7AB51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE35C2CDB66ED00D7AB51 /* LaunchScreen.storyboard */; };
+		FA2BE3BB2CDB66EE00D7AB51 /* Literata-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE35F2CDB66ED00D7AB51 /* Literata-VariableFont_opsz,wght.ttf */; };
+		FA2BE3BC2CDB66EE00D7AB51 /* Literata-Italic-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE3602CDB66ED00D7AB51 /* Literata-Italic-VariableFont_opsz,wght.ttf */; };
+		FA2BE3BD2CDB66EE00D7AB51 /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3622CDB66ED00D7AB51 /* Publication.swift */; };
+		FA2BE3BE2CDB66EE00D7AB51 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3632CDB66ED00D7AB51 /* Paths.swift */; };
+		FA2BE3BF2CDB66EE00D7AB51 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3642CDB66ED00D7AB51 /* UserError.swift */; };
+		FA2BE3C02CDB66EE00D7AB51 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3662CDB66ED00D7AB51 /* IconButton.swift */; };
+		FA2BE3C12CDB66EE00D7AB51 /* ScreenOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3682CDB66ED00D7AB51 /* ScreenOrientation.swift */; };
+		FA2BE3C22CDB66EE00D7AB51 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE36A2CDB66ED00D7AB51 /* Future.swift */; };
+		FA2BE3C32CDB66EE00D7AB51 /* AnyPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE36B2CDB66ED00D7AB51 /* AnyPublisher.swift */; };
+		FA2BE3C42CDB66EE00D7AB51 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE36C2CDB66ED00D7AB51 /* URL.swift */; };
+		FA2BE3C52CDB66EE00D7AB51 /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE36D2CDB66ED00D7AB51 /* Locator.swift */; };
+		FA2BE3C62CDB66EE00D7AB51 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE36E2CDB66ED00D7AB51 /* UIImage.swift */; };
+		FA2BE3C72CDB66EE00D7AB51 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE36F2CDB66ED00D7AB51 /* UIViewController.swift */; };
+		FA2BE3C82CDB66EE00D7AB51 /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3702CDB66ED00D7AB51 /* BarButtonItem.swift */; };
+		FA2BE3C92CDB66EE00D7AB51 /* Readium.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3722CDB66ED00D7AB51 /* Readium.swift */; };
+		FA2BE3CA2CDB66EE00D7AB51 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3732CDB66ED00D7AB51 /* AboutTableViewController.swift */; };
+		FA2BE3CB2CDB66EE00D7AB51 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE3742CDB66ED00D7AB51 /* AppModule.swift */; };
+		FA2BE3CC2CDB66EE00D7AB51 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE3752CDB66ED00D7AB51 /* App.storyboard */; };
+		FAF71FAC2CDB606300B7867A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71FAB2CDB606300B7867A /* AppDelegate.swift */; };
+		FAF71FAE2CDB606300B7867A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71FAD2CDB606300B7867A /* SceneDelegate.swift */; };
+		FAF71FB02CDB606300B7867A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71FAF2CDB606300B7867A /* ViewController.swift */; };
+		FAF71FB32CDB606300B7867A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF71FB12CDB606300B7867A /* Main.storyboard */; };
+		FAF71FC32CDB606700B7867A /* PDFViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71FC22CDB606700B7867A /* PDFViewerTests.swift */; };
+		FAF71FCD2CDB606700B7867A /* PDFViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71FCC2CDB606700B7867A /* PDFViewerUITests.swift */; };
+		FAF71FCF2CDB606700B7867A /* PDFViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF71FCE2CDB606700B7867A /* PDFViewerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAF71FBF2CDB606700B7867A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF71FA02CDB606300B7867A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF71FA72CDB606300B7867A;
+			remoteInfo = PDFViewer;
+		};
+		FAF71FC92CDB606700B7867A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF71FA02CDB606300B7867A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF71FA72CDB606300B7867A;
+			remoteInfo = PDFViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D4EC8DFE4C4FC1567DBC79D /* Pods_PDFViewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFViewerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E77BFB2F311E3C19A3DA752 /* Pods-PDFViewer-PDFViewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFViewer-PDFViewerUITests.debug.xcconfig"; path = "Target Support Files/Pods-PDFViewer-PDFViewerUITests/Pods-PDFViewer-PDFViewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BF50482E90D124FAEF75829 /* Pods-PDFViewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFViewerTests.release.xcconfig"; path = "Target Support Files/Pods-PDFViewerTests/Pods-PDFViewerTests.release.xcconfig"; sourceTree = "<group>"; };
+		91E6C7B95792AA3A7490EC78 /* Pods_PDFViewer_PDFViewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFViewer_PDFViewerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECC95E0AF8F80980082C00B /* Pods-PDFViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFViewer.release.xcconfig"; path = "Target Support Files/Pods-PDFViewer/Pods-PDFViewer.release.xcconfig"; sourceTree = "<group>"; };
+		CE8F6773F551C0903B07AFB8 /* Pods-PDFViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFViewer.debug.xcconfig"; path = "Target Support Files/Pods-PDFViewer/Pods-PDFViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC32D38216784A1A6FC13BF /* Pods-PDFViewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFViewerTests.debug.xcconfig"; path = "Target Support Files/Pods-PDFViewerTests/Pods-PDFViewerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5FEDAC15A17B49316A9B627 /* Pods_PDFViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E877DE88CEBB55F21E24DEEA /* Pods-PDFViewer-PDFViewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFViewer-PDFViewerUITests.release.xcconfig"; path = "Target Support Files/Pods-PDFViewer-PDFViewerUITests/Pods-PDFViewer-PDFViewerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA2BE3002CDB66EB00D7AB51 /* CBZModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBZModule.swift; sourceTree = "<group>"; };
+		FA2BE3012CDB66EB00D7AB51 /* CBZViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBZViewController.swift; sourceTree = "<group>"; };
+		FA2BE3032CDB66EB00D7AB51 /* AudiobookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobookViewController.swift; sourceTree = "<group>"; };
+		FA2BE3042CDB66EB00D7AB51 /* AudiobookModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudiobookModule.swift; sourceTree = "<group>"; };
+		FA2BE3062CDB66EB00D7AB51 /* PDFModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFModule.swift; sourceTree = "<group>"; };
+		FA2BE3072CDB66EB00D7AB51 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		FA2BE30A2CDB66EB00D7AB51 /* LCPManagementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPManagementTableViewController.swift; sourceTree = "<group>"; };
+		FA2BE30B2CDB66EB00D7AB51 /* LCPViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPViewModel.swift; sourceTree = "<group>"; };
+		FA2BE30D2CDB66EB00D7AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DRM.storyboard; sourceTree = "<group>"; };
+		FA2BE30F2CDB66EB00D7AB51 /* UserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		FA2BE3102CDB66EB00D7AB51 /* ReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
+		FA2BE3122CDB66EB00D7AB51 /* BookmarkCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkCellView.swift; sourceTree = "<group>"; };
+		FA2BE3142CDB66EB00D7AB51 /* HighlightCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightCellView.swift; sourceTree = "<group>"; };
+		FA2BE3152CDB66EB00D7AB51 /* HighlightContextMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightContextMenu.swift; sourceTree = "<group>"; };
+		FA2BE3172CDB66EB00D7AB51 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FA2BE3182CDB66EB00D7AB51 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		FA2BE31A2CDB66EB00D7AB51 /* OutlineViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineViewModels.swift; sourceTree = "<group>"; };
+		FA2BE31B2CDB66EB00D7AB51 /* OutlineTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineTableView.swift; sourceTree = "<group>"; };
+		FA2BE31D2CDB66EB00D7AB51 /* TTSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTSView.swift; sourceTree = "<group>"; };
+		FA2BE31E2CDB66EB00D7AB51 /* TTSViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTSViewModel.swift; sourceTree = "<group>"; };
+		FA2BE31F2CDB66EB00D7AB51 /* VisualReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualReaderViewController.swift; sourceTree = "<group>"; };
+		FA2BE3202CDB66EB00D7AB51 /* ReaderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderFactory.swift; sourceTree = "<group>"; };
+		FA2BE3212CDB66EB00D7AB51 /* ReaderError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderError.swift; sourceTree = "<group>"; };
+		FA2BE3222CDB66EB00D7AB51 /* ReaderModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderModule.swift; sourceTree = "<group>"; };
+		FA2BE3232CDB66EB00D7AB51 /* ReaderFormatModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderFormatModule.swift; sourceTree = "<group>"; };
+		FA2BE3252CDB66EB00D7AB51 /* EPUBModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPUBModule.swift; sourceTree = "<group>"; };
+		FA2BE3262CDB66EB00D7AB51 /* EPUBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPUBViewController.swift; sourceTree = "<group>"; };
+		FA2BE3272CDB66EB00D7AB51 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		FA2BE3292CDB66EB00D7AB51 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		FA2BE32A2CDB66EB00D7AB51 /* AboutSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutSectionView.swift; sourceTree = "<group>"; };
+		FA2BE32B2CDB66EB00D7AB51 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		FA2BE32E2CDB66EC00D7AB51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PublicationMenuViewController.strings; sourceTree = "<group>"; };
+		FA2BE32F2CDB66EC00D7AB51 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		FA2BE3302CDB66EC00D7AB51 /* PublicationMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationMenuViewController.swift; sourceTree = "<group>"; };
+		FA2BE3312CDB66EC00D7AB51 /* LibraryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryService.swift; sourceTree = "<group>"; };
+		FA2BE3332CDB66EC00D7AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Library.storyboard; sourceTree = "<group>"; };
+		FA2BE3352CDB66EC00D7AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PublicationMenuViewController.xib; sourceTree = "<group>"; };
+		FA2BE3372CDB66EC00D7AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PublicationCollectionViewCell.xib; sourceTree = "<group>"; };
+		FA2BE3382CDB66EC00D7AB51 /* LibraryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryError.swift; sourceTree = "<group>"; };
+		FA2BE3392CDB66EC00D7AB51 /* LibraryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryFactory.swift; sourceTree = "<group>"; };
+		FA2BE33A2CDB66EC00D7AB51 /* PublicationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA2BE33B2CDB66EC00D7AB51 /* LibraryModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryModule.swift; sourceTree = "<group>"; };
+		FA2BE33C2CDB66EC00D7AB51 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
+		FA2BE33E2CDB66EC00D7AB51 /* Highlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
+		FA2BE33F2CDB66EC00D7AB51 /* Bookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		FA2BE3402CDB66EC00D7AB51 /* UserPreferencesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesStore.swift; sourceTree = "<group>"; };
+		FA2BE3412CDB66EC00D7AB51 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		FA2BE3422CDB66EC00D7AB51 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		FA2BE3442CDB66EC00D7AB51 /* OPDSNavigationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSNavigationTableViewCell.swift; sourceTree = "<group>"; };
+		FA2BE3452CDB66EC00D7AB51 /* OPDSGroupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSGroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA2BE3462CDB66EC00D7AB51 /* OPDSRootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSRootTableViewController.swift; sourceTree = "<group>"; };
+		FA2BE3472CDB66EC00D7AB51 /* OPDSModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSModule.swift; sourceTree = "<group>"; };
+		FA2BE3482CDB66EC00D7AB51 /* OPDSGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSGroupTableViewCell.swift; sourceTree = "<group>"; };
+		FA2BE34A2CDB66EC00D7AB51 /* OPDSCatalogRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSCatalogRow.swift; sourceTree = "<group>"; };
+		FA2BE34B2CDB66EC00D7AB51 /* OPDSCatalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSCatalog.swift; sourceTree = "<group>"; };
+		FA2BE34C2CDB66EC00D7AB51 /* OPDSCatalogsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSCatalogsView.swift; sourceTree = "<group>"; };
+		FA2BE34D2CDB66EC00D7AB51 /* EditOPDSCatalogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditOPDSCatalogView.swift; sourceTree = "<group>"; };
+		FA2BE34E2CDB66EC00D7AB51 /* OPDSCatalogsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSCatalogsViewModel.swift; sourceTree = "<group>"; };
+		FA2BE34F2CDB66EC00D7AB51 /* OPDSPublicationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSPublicationInfoViewController.swift; sourceTree = "<group>"; };
+		FA2BE3502CDB66EC00D7AB51 /* OPDSFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSFactory.swift; sourceTree = "<group>"; };
+		FA2BE3512CDB66EC00D7AB51 /* OPDSPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSPlaceholderView.swift; sourceTree = "<group>"; };
+		FA2BE3532CDB66EC00D7AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/OPDS.storyboard; sourceTree = "<group>"; };
+		FA2BE3542CDB66EC00D7AB51 /* OPDSPublicationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSPublicationTableViewCell.swift; sourceTree = "<group>"; };
+		FA2BE3552CDB66EC00D7AB51 /* OPDSFacetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OPDSFacetViewController.swift; sourceTree = "<group>"; };
+		FA2BE3572CDB66EC00D7AB51 /* LCPModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPModule.swift; sourceTree = "<group>"; };
+		FA2BE35A2CDB66ED00D7AB51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA2BE35B2CDB66ED00D7AB51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2BE35D2CDB66ED00D7AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA2BE35F2CDB66ED00D7AB51 /* Literata-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Literata-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
+		FA2BE3602CDB66ED00D7AB51 /* Literata-Italic-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Literata-Italic-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
+		FA2BE3622CDB66ED00D7AB51 /* Publication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
+		FA2BE3632CDB66ED00D7AB51 /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		FA2BE3642CDB66ED00D7AB51 /* UserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
+		FA2BE3662CDB66ED00D7AB51 /* IconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		FA2BE3682CDB66ED00D7AB51 /* ScreenOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenOrientation.swift; sourceTree = "<group>"; };
+		FA2BE36A2CDB66ED00D7AB51 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		FA2BE36B2CDB66ED00D7AB51 /* AnyPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyPublisher.swift; sourceTree = "<group>"; };
+		FA2BE36C2CDB66ED00D7AB51 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		FA2BE36D2CDB66ED00D7AB51 /* Locator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
+		FA2BE36E2CDB66ED00D7AB51 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		FA2BE36F2CDB66ED00D7AB51 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		FA2BE3702CDB66ED00D7AB51 /* BarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
+		FA2BE3722CDB66ED00D7AB51 /* Readium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Readium.swift; sourceTree = "<group>"; };
+		FA2BE3732CDB66ED00D7AB51 /* AboutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		FA2BE3742CDB66ED00D7AB51 /* AppModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		FA2BE3762CDB66ED00D7AB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/App.storyboard; sourceTree = "<group>"; };
+		FAF71FA82CDB606300B7867A /* PDFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF71FAB2CDB606300B7867A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF71FAD2CDB606300B7867A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAF71FAF2CDB606300B7867A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAF71FB22CDB606300B7867A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAF71FB92CDB606700B7867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF71FBE2CDB606700B7867A /* PDFViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF71FC22CDB606700B7867A /* PDFViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerTests.swift; sourceTree = "<group>"; };
+		FAF71FC82CDB606700B7867A /* PDFViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF71FCC2CDB606700B7867A /* PDFViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerUITests.swift; sourceTree = "<group>"; };
+		FAF71FCE2CDB606700B7867A /* PDFViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF71FA52CDB606300B7867A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B91B5A17EF4AD7C4CFB0A9 /* Pods_PDFViewer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF71FBB2CDB606700B7867A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CF8E46284A3335BD7685D2 /* Pods_PDFViewerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF71FC52CDB606700B7867A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1ADE2C116987EAE4D013228 /* Pods_PDFViewer_PDFViewerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EF29152BAB0795D5C134D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5FEDAC15A17B49316A9B627 /* Pods_PDFViewer.framework */,
+				91E6C7B95792AA3A7490EC78 /* Pods_PDFViewer_PDFViewerUITests.framework */,
+				3D4EC8DFE4C4FC1567DBC79D /* Pods_PDFViewerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43BF609E09CDDBD20E6AAA87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F6773F551C0903B07AFB8 /* Pods-PDFViewer.debug.xcconfig */,
+				BECC95E0AF8F80980082C00B /* Pods-PDFViewer.release.xcconfig */,
+				4E77BFB2F311E3C19A3DA752 /* Pods-PDFViewer-PDFViewerUITests.debug.xcconfig */,
+				E877DE88CEBB55F21E24DEEA /* Pods-PDFViewer-PDFViewerUITests.release.xcconfig */,
+				CEC32D38216784A1A6FC13BF /* Pods-PDFViewerTests.debug.xcconfig */,
+				6BF50482E90D124FAEF75829 /* Pods-PDFViewerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA2BE2FE2CDB66EB00D7AB51 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE2FF2CDB66EB00D7AB51 /* CBZ */,
+				FA2BE3022CDB66EB00D7AB51 /* Audiobook */,
+				FA2BE3052CDB66EB00D7AB51 /* PDF */,
+				FA2BE3082CDB66EB00D7AB51 /* Common */,
+				FA2BE3202CDB66EB00D7AB51 /* ReaderFactory.swift */,
+				FA2BE3212CDB66EB00D7AB51 /* ReaderError.swift */,
+				FA2BE3222CDB66EB00D7AB51 /* ReaderModule.swift */,
+				FA2BE3232CDB66EB00D7AB51 /* ReaderFormatModule.swift */,
+				FA2BE3242CDB66EB00D7AB51 /* EPUB */,
+				FA2BE3272CDB66EB00D7AB51 /* Toast.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		FA2BE2FF2CDB66EB00D7AB51 /* CBZ */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3002CDB66EB00D7AB51 /* CBZModule.swift */,
+				FA2BE3012CDB66EB00D7AB51 /* CBZViewController.swift */,
+			);
+			path = CBZ;
+			sourceTree = "<group>";
+		};
+		FA2BE3022CDB66EB00D7AB51 /* Audiobook */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3032CDB66EB00D7AB51 /* AudiobookViewController.swift */,
+				FA2BE3042CDB66EB00D7AB51 /* AudiobookModule.swift */,
+			);
+			path = Audiobook;
+			sourceTree = "<group>";
+		};
+		FA2BE3052CDB66EB00D7AB51 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3062CDB66EB00D7AB51 /* PDFModule.swift */,
+				FA2BE3072CDB66EB00D7AB51 /* PDFViewController.swift */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		FA2BE3082CDB66EB00D7AB51 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3092CDB66EB00D7AB51 /* DRM */,
+				FA2BE30E2CDB66EB00D7AB51 /* Preferences */,
+				FA2BE3102CDB66EB00D7AB51 /* ReaderViewController.swift */,
+				FA2BE3112CDB66EB00D7AB51 /* Bookmark */,
+				FA2BE3132CDB66EB00D7AB51 /* Highlight */,
+				FA2BE3162CDB66EB00D7AB51 /* Search */,
+				FA2BE3192CDB66EB00D7AB51 /* Outline */,
+				FA2BE31C2CDB66EB00D7AB51 /* TTS */,
+				FA2BE31F2CDB66EB00D7AB51 /* VisualReaderViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA2BE3092CDB66EB00D7AB51 /* DRM */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE30A2CDB66EB00D7AB51 /* LCPManagementTableViewController.swift */,
+				FA2BE30B2CDB66EB00D7AB51 /* LCPViewModel.swift */,
+				FA2BE30C2CDB66EB00D7AB51 /* DRM.storyboard */,
+			);
+			path = DRM;
+			sourceTree = "<group>";
+		};
+		FA2BE30E2CDB66EB00D7AB51 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE30F2CDB66EB00D7AB51 /* UserPreferences.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		FA2BE3112CDB66EB00D7AB51 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3122CDB66EB00D7AB51 /* BookmarkCellView.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		FA2BE3132CDB66EB00D7AB51 /* Highlight */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3142CDB66EB00D7AB51 /* HighlightCellView.swift */,
+				FA2BE3152CDB66EB00D7AB51 /* HighlightContextMenu.swift */,
+			);
+			path = Highlight;
+			sourceTree = "<group>";
+		};
+		FA2BE3162CDB66EB00D7AB51 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3172CDB66EB00D7AB51 /* SearchView.swift */,
+				FA2BE3182CDB66EB00D7AB51 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FA2BE3192CDB66EB00D7AB51 /* Outline */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE31A2CDB66EB00D7AB51 /* OutlineViewModels.swift */,
+				FA2BE31B2CDB66EB00D7AB51 /* OutlineTableView.swift */,
+			);
+			path = Outline;
+			sourceTree = "<group>";
+		};
+		FA2BE31C2CDB66EB00D7AB51 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE31D2CDB66EB00D7AB51 /* TTSView.swift */,
+				FA2BE31E2CDB66EB00D7AB51 /* TTSViewModel.swift */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		FA2BE3242CDB66EB00D7AB51 /* EPUB */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3252CDB66EB00D7AB51 /* EPUBModule.swift */,
+				FA2BE3262CDB66EB00D7AB51 /* EPUBViewController.swift */,
+			);
+			path = EPUB;
+			sourceTree = "<group>";
+		};
+		FA2BE3282CDB66EB00D7AB51 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3292CDB66EB00D7AB51 /* AboutView.swift */,
+				FA2BE32A2CDB66EB00D7AB51 /* AboutSectionView.swift */,
+				FA2BE32B2CDB66EB00D7AB51 /* About.storyboard */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		FA2BE32C2CDB66EC00D7AB51 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE32D2CDB66EC00D7AB51 /* PublicationMenuViewController.strings */,
+				FA2BE32F2CDB66EC00D7AB51 /* LibraryViewController.swift */,
+				FA2BE3302CDB66EC00D7AB51 /* PublicationMenuViewController.swift */,
+				FA2BE3312CDB66EC00D7AB51 /* LibraryService.swift */,
+				FA2BE3322CDB66EC00D7AB51 /* Library.storyboard */,
+				FA2BE3342CDB66EC00D7AB51 /* PublicationMenuViewController.xib */,
+				FA2BE3362CDB66EC00D7AB51 /* PublicationCollectionViewCell.xib */,
+				FA2BE3382CDB66EC00D7AB51 /* LibraryError.swift */,
+				FA2BE3392CDB66EC00D7AB51 /* LibraryFactory.swift */,
+				FA2BE33A2CDB66EC00D7AB51 /* PublicationCollectionViewCell.swift */,
+				FA2BE33B2CDB66EC00D7AB51 /* LibraryModule.swift */,
+				FA2BE33C2CDB66EC00D7AB51 /* DetailsTableViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FA2BE33D2CDB66EC00D7AB51 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE33E2CDB66EC00D7AB51 /* Highlight.swift */,
+				FA2BE33F2CDB66EC00D7AB51 /* Bookmark.swift */,
+				FA2BE3402CDB66EC00D7AB51 /* UserPreferencesStore.swift */,
+				FA2BE3412CDB66EC00D7AB51 /* Book.swift */,
+				FA2BE3422CDB66EC00D7AB51 /* Database.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA2BE3432CDB66EC00D7AB51 /* OPDS */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3442CDB66EC00D7AB51 /* OPDSNavigationTableViewCell.swift */,
+				FA2BE3452CDB66EC00D7AB51 /* OPDSGroupCollectionViewCell.swift */,
+				FA2BE3462CDB66EC00D7AB51 /* OPDSRootTableViewController.swift */,
+				FA2BE3472CDB66EC00D7AB51 /* OPDSModule.swift */,
+				FA2BE3482CDB66EC00D7AB51 /* OPDSGroupTableViewCell.swift */,
+				FA2BE3492CDB66EC00D7AB51 /* OPDSCatalogs */,
+				FA2BE34F2CDB66EC00D7AB51 /* OPDSPublicationInfoViewController.swift */,
+				FA2BE3502CDB66EC00D7AB51 /* OPDSFactory.swift */,
+				FA2BE3512CDB66EC00D7AB51 /* OPDSPlaceholderView.swift */,
+				FA2BE3522CDB66EC00D7AB51 /* OPDS.storyboard */,
+				FA2BE3542CDB66EC00D7AB51 /* OPDSPublicationTableViewCell.swift */,
+				FA2BE3552CDB66EC00D7AB51 /* OPDSFacetViewController.swift */,
+			);
+			path = OPDS;
+			sourceTree = "<group>";
+		};
+		FA2BE3492CDB66EC00D7AB51 /* OPDSCatalogs */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE34A2CDB66EC00D7AB51 /* OPDSCatalogRow.swift */,
+				FA2BE34B2CDB66EC00D7AB51 /* OPDSCatalog.swift */,
+				FA2BE34C2CDB66EC00D7AB51 /* OPDSCatalogsView.swift */,
+				FA2BE34D2CDB66EC00D7AB51 /* EditOPDSCatalogView.swift */,
+				FA2BE34E2CDB66EC00D7AB51 /* OPDSCatalogsViewModel.swift */,
+			);
+			path = OPDSCatalogs;
+			sourceTree = "<group>";
+		};
+		FA2BE3562CDB66EC00D7AB51 /* LCP */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3572CDB66EC00D7AB51 /* LCPModule.swift */,
+			);
+			path = LCP;
+			sourceTree = "<group>";
+		};
+		FA2BE3582CDB66ED00D7AB51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3592CDB66ED00D7AB51 /* Localizable.strings */,
+				FA2BE35B2CDB66ED00D7AB51 /* Assets.xcassets */,
+				FA2BE35C2CDB66ED00D7AB51 /* LaunchScreen.storyboard */,
+				FA2BE35E2CDB66ED00D7AB51 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA2BE35E2CDB66ED00D7AB51 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE35F2CDB66ED00D7AB51 /* Literata-VariableFont_opsz,wght.ttf */,
+				FA2BE3602CDB66ED00D7AB51 /* Literata-Italic-VariableFont_opsz,wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA2BE3612CDB66ED00D7AB51 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3622CDB66ED00D7AB51 /* Publication.swift */,
+				FA2BE3632CDB66ED00D7AB51 /* Paths.swift */,
+				FA2BE3642CDB66ED00D7AB51 /* UserError.swift */,
+				FA2BE3652CDB66ED00D7AB51 /* UX */,
+				FA2BE3672CDB66ED00D7AB51 /* Toolkit */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA2BE3652CDB66ED00D7AB51 /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3662CDB66ED00D7AB51 /* IconButton.swift */,
+			);
+			path = UX;
+			sourceTree = "<group>";
+		};
+		FA2BE3672CDB66ED00D7AB51 /* Toolkit */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3682CDB66ED00D7AB51 /* ScreenOrientation.swift */,
+				FA2BE3692CDB66ED00D7AB51 /* Extensions */,
+				FA2BE3702CDB66ED00D7AB51 /* BarButtonItem.swift */,
+			);
+			path = Toolkit;
+			sourceTree = "<group>";
+		};
+		FA2BE3692CDB66ED00D7AB51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE36A2CDB66ED00D7AB51 /* Future.swift */,
+				FA2BE36B2CDB66ED00D7AB51 /* AnyPublisher.swift */,
+				FA2BE36C2CDB66ED00D7AB51 /* URL.swift */,
+				FA2BE36D2CDB66ED00D7AB51 /* Locator.swift */,
+				FA2BE36E2CDB66ED00D7AB51 /* UIImage.swift */,
+				FA2BE36F2CDB66ED00D7AB51 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA2BE3712CDB66ED00D7AB51 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3722CDB66ED00D7AB51 /* Readium.swift */,
+				FA2BE3732CDB66ED00D7AB51 /* AboutTableViewController.swift */,
+				FA2BE3742CDB66ED00D7AB51 /* AppModule.swift */,
+				FA2BE3752CDB66ED00D7AB51 /* App.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAF71F9F2CDB606300B7867A = {
+			isa = PBXGroup;
+			children = (
+				FAF71FAA2CDB606300B7867A /* PDFViewer */,
+				FAF71FC12CDB606700B7867A /* PDFViewerTests */,
+				FAF71FCB2CDB606700B7867A /* PDFViewerUITests */,
+				FAF71FA92CDB606300B7867A /* Products */,
+				43BF609E09CDDBD20E6AAA87 /* Pods */,
+				3EF29152BAB0795D5C134D69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF71FA92CDB606300B7867A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF71FA82CDB606300B7867A /* PDFViewer.app */,
+				FAF71FBE2CDB606700B7867A /* PDFViewerTests.xctest */,
+				FAF71FC82CDB606700B7867A /* PDFViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF71FAA2CDB606300B7867A /* PDFViewer */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE3282CDB66EB00D7AB51 /* About */,
+				FA2BE3712CDB66ED00D7AB51 /* App */,
+				FA2BE3612CDB66ED00D7AB51 /* Common */,
+				FA2BE33D2CDB66EC00D7AB51 /* Data */,
+				FA2BE3562CDB66EC00D7AB51 /* LCP */,
+				FA2BE32C2CDB66EC00D7AB51 /* Library */,
+				FA2BE3432CDB66EC00D7AB51 /* OPDS */,
+				FA2BE2FE2CDB66EB00D7AB51 /* Reader */,
+				FA2BE3582CDB66ED00D7AB51 /* Resources */,
+				FAF71FAB2CDB606300B7867A /* AppDelegate.swift */,
+				FAF71FAD2CDB606300B7867A /* SceneDelegate.swift */,
+				FAF71FAF2CDB606300B7867A /* ViewController.swift */,
+				FAF71FB12CDB606300B7867A /* Main.storyboard */,
+				FAF71FB92CDB606700B7867A /* Info.plist */,
+			);
+			path = PDFViewer;
+			sourceTree = "<group>";
+		};
+		FAF71FC12CDB606700B7867A /* PDFViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF71FC22CDB606700B7867A /* PDFViewerTests.swift */,
+			);
+			path = PDFViewerTests;
+			sourceTree = "<group>";
+		};
+		FAF71FCB2CDB606700B7867A /* PDFViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAF71FCC2CDB606700B7867A /* PDFViewerUITests.swift */,
+				FAF71FCE2CDB606700B7867A /* PDFViewerUITestsLaunchTests.swift */,
+			);
+			path = PDFViewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF71FA72CDB606300B7867A /* PDFViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF71FD22CDB606700B7867A /* Build configuration list for PBXNativeTarget "PDFViewer" */;
+			buildPhases = (
+				E1B88014F1E869076EB49706 /* [CP] Check Pods Manifest.lock */,
+				FAF71FA42CDB606300B7867A /* Sources */,
+				FAF71FA52CDB606300B7867A /* Frameworks */,
+				FAF71FA62CDB606300B7867A /* Resources */,
+				8C83B8B0F39C539B1546191F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFViewer;
+			packageProductDependencies = (
+			);
+			productName = PDFViewer;
+			productReference = FAF71FA82CDB606300B7867A /* PDFViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAF71FBD2CDB606700B7867A /* PDFViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF71FD52CDB606700B7867A /* Build configuration list for PBXNativeTarget "PDFViewerTests" */;
+			buildPhases = (
+				3C2CA0C88010D101D0A00495 /* [CP] Check Pods Manifest.lock */,
+				FAF71FBA2CDB606700B7867A /* Sources */,
+				FAF71FBB2CDB606700B7867A /* Frameworks */,
+				FAF71FBC2CDB606700B7867A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF71FC02CDB606700B7867A /* PBXTargetDependency */,
+			);
+			name = PDFViewerTests;
+			productName = PDFViewerTests;
+			productReference = FAF71FBE2CDB606700B7867A /* PDFViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAF71FC72CDB606700B7867A /* PDFViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF71FD82CDB606700B7867A /* Build configuration list for PBXNativeTarget "PDFViewerUITests" */;
+			buildPhases = (
+				06BD545DB578D27535018F17 /* [CP] Check Pods Manifest.lock */,
+				FAF71FC42CDB606700B7867A /* Sources */,
+				FAF71FC52CDB606700B7867A /* Frameworks */,
+				FAF71FC62CDB606700B7867A /* Resources */,
+				08D076AC3420EC5812041F40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF71FCA2CDB606700B7867A /* PBXTargetDependency */,
+			);
+			name = PDFViewerUITests;
+			productName = PDFViewerUITests;
+			productReference = FAF71FC82CDB606700B7867A /* PDFViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF71FA02CDB606300B7867A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FAF71FA72CDB606300B7867A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					FAF71FBD2CDB606700B7867A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FAF71FA72CDB606300B7867A;
+					};
+					FAF71FC72CDB606700B7867A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FAF71FA72CDB606300B7867A;
+					};
+				};
+			};
+			buildConfigurationList = FAF71FA32CDB606300B7867A /* Build configuration list for PBXProject "PDFViewer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF71F9F2CDB606300B7867A;
+			packageReferences = (
+			);
+			productRefGroup = FAF71FA92CDB606300B7867A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF71FA72CDB606300B7867A /* PDFViewer */,
+				FAF71FBD2CDB606700B7867A /* PDFViewerTests */,
+				FAF71FC72CDB606700B7867A /* PDFViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF71FA62CDB606300B7867A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BE3B42CDB66EE00D7AB51 /* OPDS.storyboard in Resources */,
+				FA2BE39B2CDB66EE00D7AB51 /* PublicationMenuViewController.xib in Resources */,
+				FA2BE3B82CDB66EE00D7AB51 /* Localizable.strings in Resources */,
+				FA2BE37F2CDB66EE00D7AB51 /* DRM.storyboard in Resources */,
+				FA2BE3952CDB66EE00D7AB51 /* About.storyboard in Resources */,
+				FA2BE3CC2CDB66EE00D7AB51 /* App.storyboard in Resources */,
+				FA2BE3BB2CDB66EE00D7AB51 /* Literata-VariableFont_opsz,wght.ttf in Resources */,
+				FA2BE3BA2CDB66EE00D7AB51 /* LaunchScreen.storyboard in Resources */,
+				FA2BE39C2CDB66EE00D7AB51 /* PublicationCollectionViewCell.xib in Resources */,
+				FA2BE3BC2CDB66EE00D7AB51 /* Literata-Italic-VariableFont_opsz,wght.ttf in Resources */,
+				FAF71FB32CDB606300B7867A /* Main.storyboard in Resources */,
+				FA2BE39A2CDB66EE00D7AB51 /* Library.storyboard in Resources */,
+				FA2BE3B92CDB66EE00D7AB51 /* Assets.xcassets in Resources */,
+				FA2BE3962CDB66EE00D7AB51 /* PublicationMenuViewController.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF71FBC2CDB606700B7867A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF71FC62CDB606700B7867A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06BD545DB578D27535018F17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDFViewer-PDFViewerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08D076AC3420EC5812041F40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDFViewer-PDFViewerUITests/Pods-PDFViewer-PDFViewerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDFViewer-PDFViewerUITests/Pods-PDFViewer-PDFViewerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PDFViewer-PDFViewerUITests/Pods-PDFViewer-PDFViewerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C2CA0C88010D101D0A00495 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDFViewerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C83B8B0F39C539B1546191F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDFViewer/Pods-PDFViewer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDFViewer/Pods-PDFViewer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PDFViewer/Pods-PDFViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1B88014F1E869076EB49706 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDFViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF71FA42CDB606300B7867A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BE3822CDB66EE00D7AB51 /* BookmarkCellView.swift in Sources */,
+				FA2BE3AA2CDB66EE00D7AB51 /* OPDSModule.swift in Sources */,
+				FA2BE3C62CDB66EE00D7AB51 /* UIImage.swift in Sources */,
+				FA2BE3972CDB66EE00D7AB51 /* LibraryViewController.swift in Sources */,
+				FA2BE3AC2CDB66EE00D7AB51 /* OPDSCatalogRow.swift in Sources */,
+				FA2BE3B62CDB66EE00D7AB51 /* OPDSFacetViewController.swift in Sources */,
+				FA2BE3932CDB66EE00D7AB51 /* AboutView.swift in Sources */,
+				FA2BE38D2CDB66EE00D7AB51 /* ReaderError.swift in Sources */,
+				FA2BE37E2CDB66EE00D7AB51 /* LCPViewModel.swift in Sources */,
+				FA2BE3A32CDB66EE00D7AB51 /* Bookmark.swift in Sources */,
+				FA2BE3872CDB66EE00D7AB51 /* OutlineViewModels.swift in Sources */,
+				FA2BE3CA2CDB66EE00D7AB51 /* AboutTableViewController.swift in Sources */,
+				FA2BE3802CDB66EE00D7AB51 /* UserPreferences.swift in Sources */,
+				FA2BE3902CDB66EE00D7AB51 /* EPUBModule.swift in Sources */,
+				FA2BE37C2CDB66EE00D7AB51 /* PDFViewController.swift in Sources */,
+				FA2BE3922CDB66EE00D7AB51 /* Toast.swift in Sources */,
+				FA2BE3832CDB66EE00D7AB51 /* HighlightCellView.swift in Sources */,
+				FA2BE3912CDB66EE00D7AB51 /* EPUBViewController.swift in Sources */,
+				FA2BE38B2CDB66EE00D7AB51 /* VisualReaderViewController.swift in Sources */,
+				FA2BE39F2CDB66EE00D7AB51 /* PublicationCollectionViewCell.swift in Sources */,
+				FA2BE3782CDB66EE00D7AB51 /* CBZViewController.swift in Sources */,
+				FA2BE3BF2CDB66EE00D7AB51 /* UserError.swift in Sources */,
+				FA2BE3A02CDB66EE00D7AB51 /* LibraryModule.swift in Sources */,
+				FA2BE3B22CDB66EE00D7AB51 /* OPDSFactory.swift in Sources */,
+				FA2BE3BE2CDB66EE00D7AB51 /* Paths.swift in Sources */,
+				FA2BE3A12CDB66EE00D7AB51 /* DetailsTableViewController.swift in Sources */,
+				FA2BE3B52CDB66EE00D7AB51 /* OPDSPublicationTableViewCell.swift in Sources */,
+				FA2BE3A42CDB66EE00D7AB51 /* UserPreferencesStore.swift in Sources */,
+				FA2BE3A72CDB66EE00D7AB51 /* OPDSNavigationTableViewCell.swift in Sources */,
+				FA2BE3CB2CDB66EE00D7AB51 /* AppModule.swift in Sources */,
+				FA2BE3B72CDB66EE00D7AB51 /* LCPModule.swift in Sources */,
+				FA2BE3862CDB66EE00D7AB51 /* SearchViewModel.swift in Sources */,
+				FA2BE3852CDB66EE00D7AB51 /* SearchView.swift in Sources */,
+				FA2BE3C92CDB66EE00D7AB51 /* Readium.swift in Sources */,
+				FAF71FB02CDB606300B7867A /* ViewController.swift in Sources */,
+				FA2BE38F2CDB66EE00D7AB51 /* ReaderFormatModule.swift in Sources */,
+				FA2BE3AB2CDB66EE00D7AB51 /* OPDSGroupTableViewCell.swift in Sources */,
+				FA2BE3C82CDB66EE00D7AB51 /* BarButtonItem.swift in Sources */,
+				FA2BE3842CDB66EE00D7AB51 /* HighlightContextMenu.swift in Sources */,
+				FA2BE3812CDB66EE00D7AB51 /* ReaderViewController.swift in Sources */,
+				FA2BE3B12CDB66EE00D7AB51 /* OPDSPublicationInfoViewController.swift in Sources */,
+				FA2BE3A82CDB66EE00D7AB51 /* OPDSGroupCollectionViewCell.swift in Sources */,
+				FA2BE3C72CDB66EE00D7AB51 /* UIViewController.swift in Sources */,
+				FA2BE37B2CDB66EE00D7AB51 /* PDFModule.swift in Sources */,
+				FA2BE3A22CDB66EE00D7AB51 /* Highlight.swift in Sources */,
+				FA2BE3892CDB66EE00D7AB51 /* TTSView.swift in Sources */,
+				FA2BE3792CDB66EE00D7AB51 /* AudiobookViewController.swift in Sources */,
+				FA2BE3C22CDB66EE00D7AB51 /* Future.swift in Sources */,
+				FAF71FAC2CDB606300B7867A /* AppDelegate.swift in Sources */,
+				FA2BE3982CDB66EE00D7AB51 /* PublicationMenuViewController.swift in Sources */,
+				FA2BE39E2CDB66EE00D7AB51 /* LibraryFactory.swift in Sources */,
+				FA2BE3AD2CDB66EE00D7AB51 /* OPDSCatalog.swift in Sources */,
+				FA2BE38C2CDB66EE00D7AB51 /* ReaderFactory.swift in Sources */,
+				FA2BE3C32CDB66EE00D7AB51 /* AnyPublisher.swift in Sources */,
+				FA2BE3A62CDB66EE00D7AB51 /* Database.swift in Sources */,
+				FAF71FAE2CDB606300B7867A /* SceneDelegate.swift in Sources */,
+				FA2BE3BD2CDB66EE00D7AB51 /* Publication.swift in Sources */,
+				FA2BE3882CDB66EE00D7AB51 /* OutlineTableView.swift in Sources */,
+				FA2BE39D2CDB66EE00D7AB51 /* LibraryError.swift in Sources */,
+				FA2BE3A92CDB66EE00D7AB51 /* OPDSRootTableViewController.swift in Sources */,
+				FA2BE3A52CDB66EE00D7AB51 /* Book.swift in Sources */,
+				FA2BE37A2CDB66EE00D7AB51 /* AudiobookModule.swift in Sources */,
+				FA2BE3C52CDB66EE00D7AB51 /* Locator.swift in Sources */,
+				FA2BE3C42CDB66EE00D7AB51 /* URL.swift in Sources */,
+				FA2BE3B32CDB66EE00D7AB51 /* OPDSPlaceholderView.swift in Sources */,
+				FA2BE3AF2CDB66EE00D7AB51 /* EditOPDSCatalogView.swift in Sources */,
+				FA2BE38E2CDB66EE00D7AB51 /* ReaderModule.swift in Sources */,
+				FA2BE3942CDB66EE00D7AB51 /* AboutSectionView.swift in Sources */,
+				FA2BE3C02CDB66EE00D7AB51 /* IconButton.swift in Sources */,
+				FA2BE3AE2CDB66EE00D7AB51 /* OPDSCatalogsView.swift in Sources */,
+				FA2BE3C12CDB66EE00D7AB51 /* ScreenOrientation.swift in Sources */,
+				FA2BE37D2CDB66EE00D7AB51 /* LCPManagementTableViewController.swift in Sources */,
+				FA2BE38A2CDB66EE00D7AB51 /* TTSViewModel.swift in Sources */,
+				FA2BE3992CDB66EE00D7AB51 /* LibraryService.swift in Sources */,
+				FA2BE3772CDB66EE00D7AB51 /* CBZModule.swift in Sources */,
+				FA2BE3B02CDB66EE00D7AB51 /* OPDSCatalogsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF71FBA2CDB606700B7867A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF71FC32CDB606700B7867A /* PDFViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF71FC42CDB606700B7867A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF71FCD2CDB606700B7867A /* PDFViewerUITests.swift in Sources */,
+				FAF71FCF2CDB606700B7867A /* PDFViewerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAF71FC02CDB606700B7867A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF71FA72CDB606300B7867A /* PDFViewer */;
+			targetProxy = FAF71FBF2CDB606700B7867A /* PBXContainerItemProxy */;
+		};
+		FAF71FCA2CDB606700B7867A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF71FA72CDB606300B7867A /* PDFViewer */;
+			targetProxy = FAF71FC92CDB606700B7867A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA2BE30C2CDB66EB00D7AB51 /* DRM.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE30D2CDB66EB00D7AB51 /* Base */,
+			);
+			name = DRM.storyboard;
+			sourceTree = "<group>";
+		};
+		FA2BE32D2CDB66EC00D7AB51 /* PublicationMenuViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE32E2CDB66EC00D7AB51 /* en */,
+			);
+			name = PublicationMenuViewController.strings;
+			sourceTree = "<group>";
+		};
+		FA2BE3322CDB66EC00D7AB51 /* Library.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE3332CDB66EC00D7AB51 /* Base */,
+			);
+			name = Library.storyboard;
+			sourceTree = "<group>";
+		};
+		FA2BE3342CDB66EC00D7AB51 /* PublicationMenuViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE3352CDB66EC00D7AB51 /* Base */,
+			);
+			name = PublicationMenuViewController.xib;
+			sourceTree = "<group>";
+		};
+		FA2BE3362CDB66EC00D7AB51 /* PublicationCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE3372CDB66EC00D7AB51 /* Base */,
+			);
+			name = PublicationCollectionViewCell.xib;
+			sourceTree = "<group>";
+		};
+		FA2BE3522CDB66EC00D7AB51 /* OPDS.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE3532CDB66EC00D7AB51 /* Base */,
+			);
+			name = OPDS.storyboard;
+			sourceTree = "<group>";
+		};
+		FA2BE3592CDB66ED00D7AB51 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE35A2CDB66ED00D7AB51 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FA2BE35C2CDB66ED00D7AB51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE35D2CDB66ED00D7AB51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA2BE3752CDB66ED00D7AB51 /* App.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE3762CDB66ED00D7AB51 /* Base */,
+			);
+			name = App.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF71FB12CDB606300B7867A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF71FB22CDB606300B7867A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF71FD02CDB606700B7867A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF71FD12CDB606700B7867A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF71FD32CDB606700B7867A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8F6773F551C0903B07AFB8 /* Pods-PDFViewer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PDFViewer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghea.PDFViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF71FD42CDB606700B7867A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BECC95E0AF8F80980082C00B /* Pods-PDFViewer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PDFViewer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghea.PDFViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAF71FD62CDB606700B7867A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC32D38216784A1A6FC13BF /* Pods-PDFViewerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghea.PDFViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PDFViewer";
+			};
+			name = Debug;
+		};
+		FAF71FD72CDB606700B7867A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BF50482E90D124FAEF75829 /* Pods-PDFViewerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghea.PDFViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PDFViewer";
+			};
+			name = Release;
+		};
+		FAF71FD92CDB606700B7867A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E77BFB2F311E3C19A3DA752 /* Pods-PDFViewer-PDFViewerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghea.PDFViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PDFViewer;
+			};
+			name = Debug;
+		};
+		FAF71FDA2CDB606700B7867A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E877DE88CEBB55F21E24DEEA /* Pods-PDFViewer-PDFViewerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghea.PDFViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PDFViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF71FA32CDB606300B7867A /* Build configuration list for PBXProject "PDFViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF71FD02CDB606700B7867A /* Debug */,
+				FAF71FD12CDB606700B7867A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF71FD22CDB606700B7867A /* Build configuration list for PBXNativeTarget "PDFViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF71FD32CDB606700B7867A /* Debug */,
+				FAF71FD42CDB606700B7867A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF71FD52CDB606700B7867A /* Build configuration list for PBXNativeTarget "PDFViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF71FD62CDB606700B7867A /* Debug */,
+				FAF71FD72CDB606700B7867A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF71FD82CDB606700B7867A /* Build configuration list for PBXNativeTarget "PDFViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF71FD92CDB606700B7867A /* Debug */,
+				FAF71FDA2CDB606700B7867A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF71FA02CDB606300B7867A /* Project object */;
+}
